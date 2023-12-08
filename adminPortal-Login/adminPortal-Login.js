@@ -19,7 +19,7 @@ async function login(loginForm) {
 
   try {
     const response = await fetch(
-      "http://localhost:8080/api/auth/adminPortal-login",
+      "https://sta-project.azurewebsites.net/api/auth/adminPortal-login",
       makeOptions("POST", { username, password }, false)
     );
 

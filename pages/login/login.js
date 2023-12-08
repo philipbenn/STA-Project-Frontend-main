@@ -14,7 +14,7 @@ async function performLogin() {
   let errorMessage = document.getElementById("error-message");
 
   try {
-    const response = await fetch("http://localhost:8080/api/auth/adminPortal-login", {
+    const response = await fetch("https://sta-project.azurewebsites.net/api/auth/adminPortal-login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
